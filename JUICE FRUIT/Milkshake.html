@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">   
+</head>
+<body>
+	<nav>
+		<button><a href="index.html">Home</a></button>
+	</nav>
+    <form id="Milkshake">
+        <h1>Milky</h1>
+    </form>  
+	<div class="Product">
+		<img src="img/passionjuice.jpg" alt="My Image">
+		<h3>Milkshake</h3>
+		<p>Price: Ksh 250</p>
+		<button onclick="purchase('Milkshake')">Purchase</button>
+	</div>
+	
+	
+
+	<script>
+		function purchase(itemDescription) {
+			// Your payment processing code here
+			alert("You have purchased: " + itemDescription);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Juice.css">
+</head>
+<body>
+    <nav>
+		<button><a href="index.html">Home</a></button>
+		<button><a href="Products.html">Products</a></button>
+	</nav>
+	<form id="Juice">
+        <h1>FIVESTAR UNIQUE JUICE FLAVORS TO SIP</h1>
+    
+	</form> 
+   
+	
+	<div class="product">
+		<img src="img/delmonte.png" alt="My Image">
+		<h2>Delmonte</h2>
+		<p>Price: $30.00</p>
+		<button onclick="showPayment('Delmonte', 30.00)">Buy Now</button>
+	</div>
+
+	<div class="product">
+		<img src="img/fanta.jpg" alt="My Image">
+		<h2>Fanta</h2>
+		<p>Price: $10.00</p>
+		<button onclick="showPayment('Fanta', 10.00)">Buy Now</button>
+	</div>
+	
+	<div class="product">
+		<img src="img/lemonade.jpg" alt="My Image">
+		<h2>Lemon juice</h2>
+		<p>Price: $20.00</p>
+		<button onclick="showPayment('Lemonade', 20.00)">Buy Now</button>
+	</div>
+
+	<div class="product">
+		<img src="img/cranberry.png" alt="My Image">
+		<h2>Pineapple flavor</h32>
+		<p>Price: $15.00</p>
+		<button onclick="showPayment('Cranberry', 15.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/orange-juo.jpg" alt="My Image">
+		<h2>Orange juice</h2>
+		<p>Price: $40.00</p>
+		<button onclick="showPayment('orange juice', 40.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/sunny.jpg" alt="My Image">
+		<h2>Juicy Juice</h2>
+		<p>Price: $25.00</p>
+		<button onclick="showPayment('Juicy Juice', 25.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/zero-sugar.jpg" alt="My Image">
+		<h2>New zero-sugar taste</h2>
+		<p>Price: $20.00</p>
+		<button onclick="showPayment('Zero-sugar', 20.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/apple juice.jpg" alt="My Image">
+		<h2>Apple flavor</h2>
+		<p>Price: $5.00</p>
+		<button onclick="showPayment('Apple Flavor', 5.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/beet juice.jpg" alt="My Image">
+		<h2>Beet Juice</h2>
+		<p>Price: $30.00</p>
+		<button onclick="showPayment('Beet Juice', 30.00)">Buy Now</button>
+	</div>
+	<div class="product">
+		<img src="img/cocktail.jpg" alt="My Image">
+		<h2>Cocktail</h2>
+		<p>Price: $10.00</p>
+		<button onclick="showPayment('Cocktail', 10.00)">Buy Now</button>
+	</div>
+	<div id="payment-form" style="display: none;">
+		<h2>Payment Details</h2>
+		<form>
+		  <label for="registration-number">Registration Number:</label>
+		  <input type="text" id="registration-number" name="registration-number"><br><br>
+		  
+		  <label for="delivery-mode">Delivery Mode:</label>
+		  <select id="delivery-mode" name="delivery-mode">
+			<option value="standard">Standard</option>
+			<option value="express">Express</option>
+		  </select><br><br>
+		  
+		  <button type="submit">Submit Payment</button>
+		</form>
+	  </div>
+	  
+	  <script>
+		function showPayment(productName, price) {
+		  var paymentForm = document.getElementById("payment-form");
+		  paymentForm.style.display = "block";
+		  paymentForm.getElementsByTagName("h2")[0].innerHTML = "Payment Details for " + productName;
+		  paymentForm.getElementsByTagName("form")[0].addEventListener("submit", function(event) {
+			event.preventDefault();
+			var registrationNumber = document.getElementById("registration-number").value;
+			var deliveryMode = document.getElementById("delivery-mode").value;
+			alert("Thank you for your payment of $" + price.toFixed(2) + " for " + productName + ".\nRegistration Number: " + registrationNumber + "\nDelivery Mode: " + deliveryMode);
+			paymentForm.style.display = "none";
+		  });
+		}
+	  </script>
+
+  </body>
+  </html>

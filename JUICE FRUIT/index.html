@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fruit and Juice Parlor Shop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+	<h1><marquee>JUICEFRUIT</marquee> </h1>
+	<script>
+		alert("WELCOME TO JUICEFRUIT");
+	</script>
+	<header>
+		
+		<nav>
+			<div class="button-container">
+			
+				<button><a href="">Home</a></button>
+				<a href="Products.html">Products</a>
+				<a href="About Us.html">About Us</a>
+				<button id="Login-btn">Login</button>
+				
+							
+			</nav>
+			<div class="my-image">
+			<img src="img/Green (2).jpg" alt="My Image">
+			<img src="img/liquor.jpg" alt="My Image">
+			<img src="img/Red.jpg" alt="My Image">
+		</div>
+			<form id="Home">
+				<h1>Welcome to our website!</h1>
+				<p>WE DELIVER ASAP.</p>
+			</form>
+			
+			<form id="Login-form" method="post"action="#">
+				<label for="username">Username:</label>
+				<input type="text" id="username">
+				<label for="password">Password:</label>
+				<input type="password" id="password">				
+				<a href="http://localhost/JUICE%20FRUIT/sign.php" id="reset.php">forgot password?</a><br>
+				<button type="submit">Login</button>				
+				<a href="http://localhost/JUICE%20FRUIT/sign.php" id="signup-link">Don't have an account? Sign up</a>
+			  </form>
+
+			  <script src="main.js"></script>
+	</header>
+	<main>
+		<section>
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send Message" class="btn">
+			
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p><b>&copy; 2023 JuiceFruit</b></p>
+	</footer>
+
+</body>
+</html>

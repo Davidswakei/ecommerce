@@ -1,0 +1,89 @@
+h1 {
+  text-align: center;
+  background-color: #f3f717;
+}
+body {
+  background-color:rgb(150, 33, 97);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: rgb(235, 194, 14);
+  padding: 10px;
+}
+
+nav a {
+  color: rgb(27, 221, 92);
+  text-decoration: none;
+  margin-right: 10px;
+}
+.my-image{
+  border: 1px solid rgb(8, 231, 38);
+  width: auto;
+  height: 300px;
+  display: inline-block;
+  margin-right: 10px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+
+#Login-form {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: rgb(188, 228, 13);
+  padding: 10px;
+  border: 1px solid rgb(199, 43, 43);
+}
+
+#Login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#Login-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#Login-form button {
+  display: block;
+  margin-top: 10px;
+}
+#signup-link {
+  color: #ec510a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav button {
+  color: #f1b50d;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  background-color: #1fdf69;
+  border: 1px solid #333;
+}
+footer {
+  text-align: end;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="fruit.css">
+</head>
+<body>
+	<nav>
+		<b><a href="Products.html">Products</a></b>
+	</nav>
+    <form id="Fruits">
+        <h1>BANANA VILLAGE</h1>
+    </form> 
+	<div class="product">
+		<img src="img/strawb.png" alt="My Image">
+		<h2>Strawberry fruit</h2>
+		<p>Price: Ksh 100</p>
+		<button onclick="purchase('Strawberry')">Purchase</button>
+	</div>
+	
+	<div class="product">
+		<img src="img/avocado.jpg" alt="My Image">
+		<h2>Avocado</h2>
+		<p>Price: Ksh 80</p>
+		<button onclick="purchase('Avocado')">Purchase</button>
+	</div>
+
+	<div class="product">
+		<img src="img/bananaf.jpg" alt="My Image">
+		<h2>Banana</h2>
+		<p>Price: Ksh 200</p>
+		<button onclick="purchase('Banana')">Purchase</button>
+	</div>
+	
+	<div class="product">
+		<img src="img/fig.png" alt="My Image">
+		<h2>Fig fruit</h2>
+		<p>Price: Ksh 300</p>
+		<button onclick="purchase('Fig Fruit')">Purchase</button>
+	</div>
+
+	<div class="product">
+		<img src="img/grape.jpg" alt="My Image">
+		<h2>Grapes</h2>
+		<p>Price: Ksh 150</p>
+		<button onclick="purchase('Grapes')">Purchase</button>
+	</div>
+	
+	<div class="product">
+		<img src="img/oranges.jpg" alt="My Image">
+		<h2>Orange Fruit</h2>
+		<p>Price: Ksh 300</p>
+		<button onclick="purchase('Oranges')">Purchase</button>
+	</div>
+
+	<div class="product">
+		<img src="img/pawpaw.jpg" alt="My Image">
+		<h2>Pawpaw</h2>
+		<p>Price: Ksh 250</p>
+		<button onclick="purchase('Pawpaw')">Purchase</button>
+	</div>
+
+	<div class="product">
+		<img src="img/pear.jpg" alt="My Image">
+		<h2>Pears Fruit</h2>
+		<p>Price: Ksh 50</p>
+		<button onclick="purchase('Pears')">Purchase</button>
+	</div>
+	
+	<div class="product">
+		<img src="img/apple.jpg" alt="My Image">
+		<h2>Apple Fruit</h2>
+		<p>Price: Ksh 500</p>
+		<button onclick="purchase('Apple fruit')">Purchase</button>
+	</div>
+
+	<div class="product">
+		<img src="img/melon.jpg" alt="My Image">
+		<h2>Watermelon</h2>
+		<p>Price: Ksh 400</p>
+		<button onclick="purchase('Watermelon')">Purchase</button>
+	</div>
+	
+	<script>
+		function purchase(itemDescription) {
+			// Your payment processing code here
+			alert("You have purchased: " + itemDescription);
+		}
+	</script>
+</body>
+</html>
